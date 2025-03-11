@@ -33,6 +33,7 @@ import Organization from './pages/Organisation.jsx';
 import OrganizationEdit from './pages/OrganizationEdit.jsx';
 import Carousel from './pages/Carousel.jsx';
 import Policy from './pages/Policies.jsx';
+import Notice from './pages/Notice.jsx';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -347,6 +348,15 @@ function App() {
             <>
               <PageTitle title="Reset Password | Faculty Login" />
               <Reset />
+            </>
+          }
+        />
+        <Route 
+          path = "/notice"
+          element={
+            <>
+              <PageTitle title="Notice | IIITU - Admin" />
+              <Notice />
             </>
           }
         />
